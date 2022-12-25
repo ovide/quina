@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Blackout;
+    src: url(Blackout-Midnight.ttf);
+}
+
+/* * {
+    font-family: Blackout;
+} */
+
+body {
+    background-image: url("fons.png");
+    background-size: cover;
+}
+
+img {
+    height: 10rem;
+}
+#grid {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #grid > div > div {
+    border: 1px solid #ccc;
+    flex-basis: 10%;
+  }
+  /* ---------------------------------------------- */
+
+  /* Aquesta part és més d'estil i es pot modificar */
+  .number-btn {
+    cursor: pointer;
+  }
+
+  .selected {  /* classe que s'afegeix als nº seleccionats */
+    /* background-color: #eb5c51; */
+    background-color: #008081;
+    border: none;
+    color: #eee;
+    font-weight: bold;
+    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; */
+  /* -webkit-animation: pulsate 2.5s infinite alternate;
+  -moz-animation: pulsate 2.5s infinite alternate;
+  animation: pulsate 2.5s infinite alternate; */
+  } 
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008081, 0 0 40px #008081, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #004041, 0 0 40px #004041, 0 0 50px #004041, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  @-webkit-keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #008081,
+        0 0 80px #008081,
+        0 0 90px #008081,
+        0 0 100px #008081,
+        0 0 150px #008081;
+    }
+    0% {
+      /* Smaller blur radius */
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #0fa,
+        0 0 45px #0fa,
+        0 0 55px #0fa,
+        0 0 70px #0fa,
+        0 0 80px #0fa;
+    }
+  }
+
+  .bola {
+      border-radius: 50vh;
+      font-size: 1.7rem;
+  }
+
+  #selectedList {
+      font-family: Blackout;
+      font-size: 2.5rem;
+      color: #3d3d3d;
+  }

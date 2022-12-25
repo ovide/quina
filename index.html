@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="author" content="">
+    <title>Quina</title>
+    <!-- amb molt poc es pot eliminar la dependencia a bootstrap -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <!-- vh-100 per poder fer que la graella ocupi tota la pantalla -->
+  <body class="vh-100 d-flex flex-column justify-content-between">
+    <header>
+      <div class="container"  onclick="reset()">
+        <img src="logo.png" alt="" srcset="">
+      </div>
+    </header>
+    <!-- <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm text-light">
+        <div class="container">
+          <div class="col-12">Quina</div>
+        </div>
+    </header> -->
+    <!-- aquí va la graella -->
+    <main class="flex-grow-1">
+      <section class="container h-100">
+        <div class="row h-100">
+          <div id="grid" class="col-12 h-100 m-auto"></div>
+        </div>
+      </section>
+    </main>
+    <!-- aquí va el footer amb el botó reset i un llistat dels nº que han sortit fins al moment -->
+    <footer class="text-muted py-5 opacity-75">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-1">
+            <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+          </div> -->
+          <div class="col">
+            <!-- aquí s'hi van afegint el llistat de nº seleccionats -->
+            <div id="selectedList" class="flex-grow-1"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
